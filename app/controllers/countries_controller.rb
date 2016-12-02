@@ -1,6 +1,6 @@
 class CountriesController < ApplicationController
   before_action :set_country, only: [:show, :edit, :update, :destroy]
-
+  
   # GET /countries
   # GET /countries.json
   def index
@@ -71,4 +71,5 @@ class CountriesController < ApplicationController
     def country_params
       params.require(:country).permit(:name, :Region_id)
     end
+
 end

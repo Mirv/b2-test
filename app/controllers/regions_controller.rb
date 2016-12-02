@@ -71,4 +71,5 @@ class RegionsController < ApplicationController
     def region_params
       params.require(:region).permit(:name, :continent_id)
     end
+    
 end
