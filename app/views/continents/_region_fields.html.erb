@@ -1,0 +1,17 @@
+<div class='region-fields'>
+
+<table>
+    <tr>
+        <td><%= f.input :name, label: 'Region Name:  ' %></td>
+        <td><%= link_to_remove_association "remove region", f %></td>
+    </tr>
+    <tr>
+    <%= f.simple_fields_for :countries do |c| %>
+        <%= render 'country_fields', :f => c %>
+    <% end %>
+    <div class='add-countries'>
+      <%= link_to_add_association 'add country', f, :countries %>
+    </div>
+    </tr>
+    </table>
+</div>

@@ -1,7 +1,6 @@
 class ContinentsController < ApplicationController
   before_action :set_continent, only: [:show, :edit, :update, :destroy]
 
-
   # GET /continents
   # GET /continents.json
   def index
@@ -70,9 +69,9 @@ class ContinentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def continent_params
-      params.require(:continent).permit(:name,
-      regions_attributes[:name, :_destroy, continent_id, 
-      countries_attributes[:name, region_id, :_destory]])
+      params.require(:continent).permit(:id, :name, :_destroy,
+      regions_attributes: [:id, :name, :_destroy, :continent_id, 
+      countries_attributes: [:id, :name, :region_id, :continent_id, :_destroy]])
     end
 
 end

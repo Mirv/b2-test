@@ -1,6 +1,22 @@
 <h1>Editing Continent</h1>
 
-<%= render 'form', continent: @continent %>
+  <%= simple_form_for @continent do |f| %>
+    <%= f.input :name %>
+      <h3>Regions</h3>
+        <%= f.simple_fields_for :regions do |region| %>
+          <%= render 'region_fields', :f => region  %>
+        <% end %>
 
+      <div class="add-more-region">
+        <%= link_to_add_association 'new region', f, :regions %>
+      </div>
+    
+    <div>
+      <%= f.button :submit %>
+      <% end %>
+    </div>  
+
+<p>
 <%= link_to 'Show', @continent %> |
 <%= link_to 'Back', continents_path %>
+</p>
