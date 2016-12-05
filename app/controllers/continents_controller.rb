@@ -71,7 +71,9 @@ class ContinentsController < ApplicationController
     def continent_params
       params.require(:continent).permit(:id, :name, :_destroy,
       regions_attributes: [:id, :name, :_destroy, :continent_id, 
-      countries_attributes: [:id, :name, :region_id, :continent_id, :_destroy]])
+      countries_attributes: [:id, :name, :region_id, :continent_id, :_destroy,
+      states_attributes: [:id, :name, :country_id, :_destroy
+      ]]])
     end
 
 end

@@ -1,9 +1,8 @@
-<h1>Editing Continent</h1>
+
 
   <%= simple_form_for @continent do |f| %>
-    <%= f.input :name %>
-      <h3>Regions</h3>
-        <%= f.simple_fields_for :regions do |region| %>
+  <H1>Editing:  <%= @continent.name %></H1>
+       <%= f.simple_fields_for :regions do |region| %>
           <%= render 'region_fields', :f => region  %>
         <% end %>
 

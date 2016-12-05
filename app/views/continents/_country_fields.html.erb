@@ -1,7 +1,12 @@
 <div class='country-fields'>
     <tr>
-      <td><%= f.input :name, label: 'Country Name:  ' %></td>
-      <td><%= link_to_remove_association "remove country", f %></td>
+     <td> </td><td> </td><td> </td><td><%= f.input :name, label: ' ' %></td>
+      <td><%= link_to_remove_association "Remove", f %></td>
     </tr>
 </div>
-
+<div class='add-states'>
+  <%= f.simple_fields_for :states do |c| %>
+    <%= render 'state_fields', :f => c %>
+  <% end %>
+  <%= link_to_add_association 'Add State', f, :states %>
+</div>
