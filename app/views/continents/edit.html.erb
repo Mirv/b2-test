@@ -1,12 +1,11 @@
-
-
+<div class="nested-fields">
   <%= simple_form_for @continent do |f| %>
   <H1>Editing:  <%= @continent.name %></H1>
        <%= f.simple_fields_for :regions do |region| %>
           <%= render 'region_fields', :f => region  %>
         <% end %>
 
-      <div class="add-more-region">
+      <div id="add-more-region">
         <%= link_to_add_association 'new region', f, :regions %>
       </div>
     
@@ -19,3 +18,4 @@
 <%= link_to 'Show', @continent %> |
 <%= link_to 'Back', continents_path %>
 </p>
+</div>

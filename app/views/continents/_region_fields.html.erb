@@ -1,13 +1,13 @@
-<div class='region-fields'>
+<div class="nested-fields">
 <h3>Region</h3>
 <table>
     <tr>
         <td> </td><td><%= f.input :name, label: 'Region Name:  ' %></td>
-        <td><%= link_to_remove_association "Remove Region", f %></td>
+       <td> <div id="remove-region"><%= link_to_remove_association "Remove Region", f %></div></td>
     </tr>
 </table>
 
-<div class='add-countries'>
+<div id="add-countries">
   <strong>Countries</strong>
   <%= link_to_add_association 'Add Country', f, :countries %>
 </div>
