@@ -70,8 +70,7 @@ $(document).ready(function() {
     });
 
     $('#regions').bind('cocoon:before-remove', function(e, region) {
-        region.css("background","red");
-        $(this).data('remove-timeout', 1000);
+        $(this).data('remove-timeout', 3000);
         region.fadeOut('slow');
     })
 
