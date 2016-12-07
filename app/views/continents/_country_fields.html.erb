@@ -1,7 +1,7 @@
-<div class="nested-fields">
+<div class="nested-fields-f">
     <tr>
      <td> </td><td> </td><td> </td><td><%= f.input :name, label: 'Country: ' %></td>
-     <div id="remove-country"><td><%= link_to_remove_association "Remove", f %></td></div>
+     <div class="remove-country"><td><%= link_to_remove_association("Remove", f, {wrapper_class: ".nested-fields-f" }) %></td></div>
     </tr>
 </div>
 <div id='add-states'>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :counties
   resources :states
   resources :countries
   resources :regions
