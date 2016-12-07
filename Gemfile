@@ -29,6 +29,7 @@ gem 'cocoon'
 #  simple form to clean up template
 gem 'simple_form'
 
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
