@@ -1,7 +1,4 @@
 <div class="nested-fields">
-    <tr>
-     <td> </td><td> </td><td> </td><td> </td><td><%= f.input :name, label: ' ' %></td>
-      <div><td><%= link_to_remove_association "Remove", f %></td></div>
-    </tr>
+  <%= f.input :name, label: ' ' %>
+  <div class="remove-states"><%= link_to_remove_association "Remove", f %></div>
 </div>
-

@@ -29,13 +29,10 @@ gem 'cocoon'
 #  simple form to clean up template
 gem 'simple_form'
 
-<<<<<<< HEAD
-=======
 gem 'bootstrap-sass'
 # fixes bootstrap on certain vendors
 gem 'autoprefixer-rails'
 
->>>>>>> addbootstrap
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

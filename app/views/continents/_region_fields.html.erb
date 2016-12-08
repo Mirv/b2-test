@@ -1,22 +1,11 @@
 <div class="nested-fields">
-<h3>Region</h3>
-<table>
-    <tr>
-     <td> </td><td><%= f.input :name, label: 'Region Name:  ' %></td>
-     <td> <div id="remove-region"><%= link_to_remove_association "Remove Region", f %></div></td>
-    </tr>
-</table>
-
-<div id="add-countries">
-  <strong>Countries</strong>
-  <%= link_to_add_association 'Add Country', f, :countries %>
-</div>
-
-<table> 
-    <tr>
-    <%= f.simple_fields_for :countries do |c| %>
-        <%= render 'country_fields', :f => c %>
-    <% end %>
-    </tr>
-</table>
+  <h3>Region</h3>
+      <%= f.input :name %>
+      <div class="remove-region"><%= link_to_remove_association "Remove Region", f %></div>
+      <div class="adding-countries">
+        <%= f.simple_fields_for :countries do |c| %>
+            <%= render 'country_fields', :f => c %>
+        <% end %>
+        <%= link_to_add_association 'Add Country', f, :countries %>
+      </div>
 </div>

@@ -29,5 +29,15 @@ Default route is set to continent
 
 ## Notes
 
-- Needs layout for navlinks
+- Have pointless scaffolds in place still to check data - just incase
 - 
+
+## Issue #1
+ 
+- Found that the "update continent" button doesn't click sometimes &
+- ...othertimes it won't save regardless of clicking
+
+## Issue #2
+
+- Found none of the jquery in continent.js is logging to console
+- Found none of the jquery is calling back to send remove message to rails to hit db
