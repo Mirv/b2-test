@@ -8,11 +8,11 @@
 
 ## Directions
 
-Access the git repo you want
-Fork it
-Clone it to cloud9
-Run Project
-Default route is set to continent, so just click edit to begin playing
+- Access the git repo you want
+- Fork it
+- Clone it to cloud9
+- Run Project
+- Default route is set to continent, so just click edit to begin playing
 
 ## Notes
 
