@@ -1,17 +1,10 @@
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
-
 
 ## Support & Documentation
 
-Cocoon Documentation -- Visit for the project documentation -- https://github.com/nathanvda/cocoon 
-Cloud9 -- Visit for your own easy to clone environment -- http://docs.c9.io 
-Working demo of Cocoon with SLIM -- Visit https://github.com/nathanvda/cocoon_simple_form_demo
+- Cocoon Documentation -- Visit for the project documentation -- https://github.com/nathanvda/cocoon 
+- Cloud9 -- Visit for your own easy to clone environment -- http://docs.c9.io 
+- Working demo of Cocoon with SLIM -- Visit https://github.com/nathanvda/cocoon_simple_form_demo
 
 ## Directions
 
