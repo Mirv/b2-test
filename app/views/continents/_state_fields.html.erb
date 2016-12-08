@@ -1,4 +1,10 @@
 <div class="nested-fields">
   <%= f.input :name, label: ' ' %>
   <div class="remove-states"><%= link_to_remove_association "Remove", f %></div>
+  <div class='adding-counties'>
+    <%= f.simple_fields_for :counties do |c| %>
+      <%= render 'county_fields', :f => c %>
+    <% end %>
+    <%= link_to_add_association 'Add County', f, :counties %>
+  </div>
 </div>

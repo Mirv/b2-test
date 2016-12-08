@@ -5,6 +5,6 @@ class Country < ApplicationRecord
   has_many   :states
   accepts_nested_attributes_for :states, reject_if: :all_blank, allow_destroy: true
   
-   # has_many   :counties, through: :states, :dependent => :destroy
- # accepts_nested_attributes_for :counties, reject_if: :all_blank, allow_destroy: true
+  has_many   :counties, through: :states, :dependent => :destroy
+  accepts_nested_attributes_for :counties, reject_if: :all_blank, allow_destroy: true
 end

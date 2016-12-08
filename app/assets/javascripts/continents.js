@@ -79,21 +79,5 @@ $(document).ready(function() {
         region.fadeOut('slow');
     })
 
-    $('regions').bind('cocoon:before-insert', function(e,region_to_be_added) {
-        console.log(region_to_be_added);
-        region_to_be_added.fadeIn('slow');
-        console.log("Firing - before-insert");
-    });
-
-    $('regions').bind('cocoon:after-insert', function(e, added_region) {
-        added_region.css("background","red");
-    });
-
-    $('regions').bind('cocoon:before-remove', function(e, region) {
-            console.log("Firing - before-remove");
-
-        $(this).data('remove-timeout', 3000);
-        region.fadeOut('slow');
-    })
     //$('body').tabs();
 });
