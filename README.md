@@ -7,37 +7,32 @@
     ----------------------------------------------------------------- 
 
 
-Welcome to your Rails project on Cloud9 IDE!
-
-To get started, just do the following:
-
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://b2-test-mirv.c9users.io/).
-
-Happy coding!
-The Cloud9 IDE team
-
-
 ## Support & Documentation
 
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+Cocoon Documentation -- Visit for the project documentation -- https://github.com/nathanvda/cocoon 
+Cloud9 -- Visit for your own easy to clone environment -- http://docs.c9.io 
+Working demo of Cocoon with SLIM -- Visit https://github.com/nathanvda/cocoon_simple_form_demo
 
 ## Directions
 
-Default route is set to continent
+Access the git repo you want
+Fork it
+Clone it to cloud9
+Run Project
+Default route is set to continent, so just click edit to begin playing
 
 ## Notes
 
-- Have pointless scaffolds in place still to check data - just incase
-- 
+- Have bloated scaffolds in place still to check data - just incase
 
-## Issue #1
- 
-- Found that the "update continent" button doesn't click sometimes &
-- ...othertimes it won't save regardless of clicking
+## Gotcha's 
 
-## Issue #2
-
-- Found none of the jquery in continent.js is logging to console
-- Found none of the jquery is calling back to send remove message to rails to hit db
+- 'nested-fields' by default has to be used in each nested partial (not the top level)
+- A second div of with any name wrapping the form/partial being setup 
+- ... is not optional.
+- Cocoon documents that "link_to_remove_association" must also have a div 
+- Cocoon documents that all partials should be  '<>_fields.<>' - ....
+- ... https://github.com/nathanvda/cocoon#link_to_remove_association
+- Strong parameters in the controllers - using nested format ...
+- ... <modelname>_attributes: [:id, :name, :_destroy, <further nesting?>] ...
+- ...https://github.com/nathanvda/cocoon#strong-parameters-gotcha
